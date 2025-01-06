@@ -158,3 +158,37 @@ class School:
 my_school = School()
 my_school.add_student("Alice", 12, 'alice@gmail.com', 'Computer Science', '300lvl', 32)
 my_school.add_student("Bob", 14, 'bob@gmail.com', 'Accounting', '200lvl', 35)
+
+
+
+# bank app
+class Account():
+    def __init__(self, account_no, balance=0):
+        self.account_no= account_no
+        self.balance= balance
+        self.transaction_history=[]
+
+    def deposit(self, amount):
+            if amount > 0:
+                self.balance += amount
+                self.transaction_history.append(amount)
+                print(f"Your Deposit of {amount}$ is successful")
+            else:
+                print("Enter a postive number")
+        
+    def withdraw(self, amount):
+            if amount > 0:
+                self.balance -= amount
+                self.transaction_history.append(amount)
+            else:
+                print('Enter a postive number')
+        
+    def dis_transaction_history(self):
+            print(f"Transction history for {self.account_no} ")
+            
+            for t in self.transaction_history:
+                print(t)
+mybank= Account(12454)
+mybank.deposit(32)
+mybank.withdraw(12)
+mybank.dis_transaction_history()
