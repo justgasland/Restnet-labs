@@ -86,44 +86,44 @@
 # print(mycar.sound)
 
 
-# class Student:
-#     def check_pass_fail(self):
-#         if self.marks >= 40:
-#             return True
-#         else:
-#             return False
+class Student:
+    def check_pass_fail(self):
+        if self.marks >= 40:
+            return True
+        else:
+            return False
 
-# student1 = Student()
-# student1.name = "Harry"
-# student1.marks = 85
+student1 = Student()
+student1.name = "Harry"
+student1.marks = 85
 
-# did_pass = student1.check_pass_fail()
-# print(did_pass)
+did_pass = student1.check_pass_fail()
+print(did_pass)
 
-# student2 = Student()
-# student2.name = "Janet"
-# student2.marks = 30
-# did_pass = student2.check_pass_fail()
-# print(did_pass)
+student2 = Student()
+student2.name = "Janet"
+student2.marks = 30
+did_pass = student2.check_pass_fail()
+print(did_pass)
 
 
 
 # Computing area of circle, rectangle and square,
 
-class  area:
-    def __init__(self,r, b, l, ):
-        self.r=r
-        self.b= b
-        self.l=l
+class  Area:
+    def __init__(self,radius, breadth, length, ):
+        self.radius=radius
+        self.breadth= breadth
+        self.length=length
     
     def square(self):
-        sqr= self.l*self.l
+        sqr= self.length*self.length
         print('the area of the sqaure is ', sqr)
     def circle(self):
-        cir = 3.142 * self.r * self.r
+        cir = 3.142 * self.radius * self.radius
         print('the area of the circle is ', cir)
     def rectangle(self):
-        rec = self.b* self.l
+        rec = self.breadth* self.length
         print('tha area of the rectangle is ', rec)
 
 math= area(3, 4,6)
@@ -192,3 +192,8 @@ mybank= Account(12454)
 mybank.deposit(32)
 mybank.withdraw(12)
 mybank.dis_transaction_history()
+
+
+
+
+
