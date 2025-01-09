@@ -126,7 +126,7 @@ class  Area:
         rec = self.breadth* self.length
         print('tha area of the rectangle is ', rec)
 
-math= area(3, 4,6)
+math= Area(3, 4,6)
 math.circle()
 math.rectangle()
 math.square()
